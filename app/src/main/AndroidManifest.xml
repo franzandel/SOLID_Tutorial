@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tunaikumobile.solidtutorial">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".OpenClosed.Violation.OCViolationActivity">
+
+        </activity>
+        <activity android:name=".OpenClosed.BestPractice.OCBestPracticeActivity">
+
+        </activity>
+        <activity android:name=".DependencyInversion.BestPractice.DIBestPracticeActivity">
+
+        </activity>
+        <activity android:name=".DependencyInversion.Violation.DIViolationActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".InterfaceSegregation.BestPractice.ISBestPracticeActivity" />
+        <activity android:name=".LiskovSubstitution.BestPractice.LSBestPracticeActivity" />
+        <activity android:name=".LiskovSubstitution.Violation.LSViolationActivity" />
+        <activity android:name=".SingleResponsibility.BestPractice.SRBestPracticeActivity" />
+    </application>
+
+</manifest>
