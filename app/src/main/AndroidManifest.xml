@@ -9,26 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".OpenClosed.Violation.OCViolationActivity">
-
-        </activity>
-        <activity android:name=".OpenClosed.BestPractice.OCBestPracticeActivity">
-
-        </activity>
-        <activity android:name=".DependencyInversion.BestPractice.DIBestPracticeActivity">
-
-        </activity>
-        <activity android:name=".DependencyInversion.Violation.DIViolationActivity">
+        <activity android:name=".RootActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".InterfaceSegregation.BestPractice.ISBestPracticeActivity" />
-        <activity android:name=".LiskovSubstitution.BestPractice.LSBestPracticeActivity" />
-        <activity android:name=".LiskovSubstitution.Violation.LSViolationActivity" />
-        <activity android:name=".SingleResponsibility.BestPractice.SRBestPracticeActivity" />
+        <activity android:name=".openClosed.violation.OCViolationActivity" />
+        <activity android:name=".openClosed.bestPractice.OCBestPracticeActivity" />
+        <activity android:name=".dependencyInversion.bestPractice.DIBestPracticeActivity" />
+        <activity android:name=".dependencyInversion.violation.DIViolationActivity" />
+        <activity android:name=".interfaceSegregation.bestPractice.ISBestPracticeActivity" />
+        <activity android:name=".interfaceSegregation.violation.ISViolationActivity" />
+        <activity android:name=".liskovSubstitution.bestPractice.LSBestPracticeActivity" />
+        <activity android:name=".liskovSubstitution.violation.LSViolationActivity" />
+        <activity android:name=".singleResponsibility.bestPractice.SRBestPracticeActivity" />
+        <activity android:name=".singleResponsibility.violation.SRViolationActivity" />
     </application>
 
 </manifest>
