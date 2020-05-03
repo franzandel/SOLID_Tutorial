@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RootActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvSRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Single Responsibility"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnSRPBestPractice"
+        app:layout_constraintEnd_toEndOf="@+id/btnSRPViolation"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btnSRPBestPractice"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btnSRPBestPractice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best Practice"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/tvOCP"
+        app:layout_constraintEnd_toStartOf="@+id/btnSRPViolation"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSRP" />
+
+    <Button
+        android:id="@+id/btnSRPViolation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Violation"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnSRPBestPractice"
+        app:layout_constraintTop_toBottomOf="@+id/tvSRP" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvOCP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Open Closed"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnOCPBestPractice"
+        app:layout_constraintEnd_toEndOf="@+id/btnOCPViolation"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btnOCPBestPractice"
+        app:layout_constraintTop_toBottomOf="@+id/btnSRPBestPractice"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btnOCPBestPractice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best Practice"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/tvLSP"
+        app:layout_constraintEnd_toStartOf="@+id/btnOCPViolation"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvOCP" />
+
+    <Button
+        android:id="@+id/btnOCPViolation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Violation"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnOCPBestPractice"
+        app:layout_constraintTop_toBottomOf="@+id/tvOCP" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvLSP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Liskov Substitution"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnLSPBestPractice"
+        app:layout_constraintEnd_toEndOf="@+id/btnLSPViolation"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btnLSPBestPractice"
+        app:layout_constraintTop_toBottomOf="@+id/btnOCPBestPractice"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btnLSPBestPractice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best Practice"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/tvISP"
+        app:layout_constraintEnd_toStartOf="@+id/btnLSPViolation"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvLSP" />
+
+    <Button
+        android:id="@+id/btnLSPViolation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Violation"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnLSPBestPractice"
+        app:layout_constraintTop_toBottomOf="@+id/tvLSP" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvISP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Interface Segregation"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnISPBestPractice"
+        app:layout_constraintEnd_toEndOf="@+id/btnISPViolation"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btnISPBestPractice"
+        app:layout_constraintTop_toBottomOf="@+id/btnLSPBestPractice"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btnISPBestPractice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best Practice"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toTopOf="@+id/tvDIP"
+        app:layout_constraintEnd_toStartOf="@+id/btnISPViolation"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvISP" />
+
+    <Button
+        android:id="@+id/btnISPViolation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Violation"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnISPBestPractice"
+        app:layout_constraintTop_toBottomOf="@+id/tvISP" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDIP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dependency Inversion"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/btnDIPBestPractice"
+        app:layout_constraintEnd_toEndOf="@+id/btnDIPViolation"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/btnDIPBestPractice"
+        app:layout_constraintTop_toBottomOf="@+id/btnISPBestPractice"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <Button
+        android:id="@+id/btnDIPBestPractice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Best Practice"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnDIPViolation"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDIP" />
+
+    <Button
+        android:id="@+id/btnDIPViolation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Violation"
+        android:textAllCaps="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnDIPBestPractice"
+        app:layout_constraintTop_toBottomOf="@+id/tvDIP" />
+</androidx.constraintlayout.widget.ConstraintLayout>
