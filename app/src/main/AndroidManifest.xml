@@ -16,16 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".openClosed.violation.OCViolationActivity" />
-        <activity android:name=".openClosed.bestPractice.OCBestPracticeActivity" />
-        <activity android:name=".dependencyInversion.bestPractice.DIBestPracticeActivity" />
-        <activity android:name=".dependencyInversion.violation.DIViolationActivity" />
-        <activity android:name=".interfaceSegregation.bestPractice.ISBestPracticeActivity" />
-        <activity android:name=".interfaceSegregation.violation.ISViolationActivity" />
-        <activity android:name=".liskovSubstitution.bestPractice.LSBestPracticeActivity" />
-        <activity android:name=".liskovSubstitution.violation.LSViolationActivity" />
-        <activity android:name=".singleResponsibility.bestPractice.SRBestPracticeActivity" />
-        <activity android:name=".singleResponsibility.violation.SRViolationActivity" />
+        <activity android:name=".openclosed.violation.OCViolationActivity" />
+        <activity android:name=".openclosed.bestPractice.OCBestPracticeActivity" />
+        <activity android:name=".dependencyinversion.bestPractice.DIBestPracticeActivity" />
+        <activity android:name=".dependencyinversion.violation.DIViolationActivity" />
+        <activity android:name=".interfacesegregation.bestPractice.ISBestPracticeActivity" />
+        <activity android:name=".interfacesegregation.violation.ISViolationActivity" />
+        <activity android:name=".liskovsubstitution.bestPractice.LSBestPracticeActivity" />
+        <activity android:name=".liskovsubstitution.violation.LSViolationActivity" />
+        <activity android:name=".singleresponsibility.bestPractice.SRBestPracticeActivity" />
+        <activity android:name=".singleresponsibility.violation.SRViolationActivity" />
     </application>
 
 </manifest>

@@ -2,16 +2,16 @@ package com.tunaikumobile.solidtutorial
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.tunaikumobile.solidtutorial.dependencyInversion.bestPractice.DIBestPracticeActivity
-import com.tunaikumobile.solidtutorial.dependencyInversion.violation.DIViolationActivity
-import com.tunaikumobile.solidtutorial.interfaceSegregation.bestPractice.ISBestPracticeActivity
-import com.tunaikumobile.solidtutorial.interfaceSegregation.violation.ISViolationActivity
-import com.tunaikumobile.solidtutorial.liskovSubstitution.bestPractice.LSBestPracticeActivity
-import com.tunaikumobile.solidtutorial.liskovSubstitution.violation.LSViolationActivity
-import com.tunaikumobile.solidtutorial.openClosed.bestPractice.OCBestPracticeActivity
-import com.tunaikumobile.solidtutorial.openClosed.violation.OCViolationActivity
-import com.tunaikumobile.solidtutorial.singleResponsibility.bestPractice.SRBestPracticeActivity
-import com.tunaikumobile.solidtutorial.singleResponsibility.violation.SRViolationActivity
+import com.tunaikumobile.solidtutorial.dependencyinversion.bestPractice.DIBestPracticeActivity
+import com.tunaikumobile.solidtutorial.dependencyinversion.violation.DIViolationActivity
+import com.tunaikumobile.solidtutorial.interfacesegregation.bestPractice.ISBestPracticeActivity
+import com.tunaikumobile.solidtutorial.interfacesegregation.violation.ISViolationActivity
+import com.tunaikumobile.solidtutorial.liskovsubstitution.bestPractice.LSBestPracticeActivity
+import com.tunaikumobile.solidtutorial.liskovsubstitution.violation.LSViolationActivity
+import com.tunaikumobile.solidtutorial.openclosed.bestPractice.OCBestPracticeActivity
+import com.tunaikumobile.solidtutorial.openclosed.violation.OCViolationActivity
+import com.tunaikumobile.solidtutorial.singleresponsibility.bestPractice.SRBestPracticeActivity
+import com.tunaikumobile.solidtutorial.singleresponsibility.violation.SRViolationActivity
 import kotlinx.android.synthetic.main.activity_root.*
 
 class RootActivity : AppCompatActivity() {
