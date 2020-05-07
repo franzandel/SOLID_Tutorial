@@ -11,9 +11,9 @@ class LSViolationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_liskov_substitution)
 
-        // Programmer doesn't talk to Customer, but is forced to extends talkToCustomer() Method
         val jobsViolation: JobsViolation = ProgrammerViolation()
         jobsViolation.doWork()
+        // talkToCustomer() is called, but do nothing 
         jobsViolation.talkToCustomer()
     }
 }

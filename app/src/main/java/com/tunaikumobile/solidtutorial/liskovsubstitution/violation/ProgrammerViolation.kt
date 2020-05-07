@@ -12,6 +12,6 @@ class ProgrammerViolation : JobsViolation() {
     }
 
     override fun talkToCustomer() {
-        throw RuntimeException("I don't talk to Customer")
+
     }
 }

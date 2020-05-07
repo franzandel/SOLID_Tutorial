@@ -10,8 +10,8 @@ class LSBestPracticeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_liskov_substitution)
 
-        // Programmer isn't forced to extends talkToCustomer() Method anymore
         val work: Work = Programmer()
+        // Now, we won't find talkToCustomer() Method anymore
         work.doWork()
     }
 }
