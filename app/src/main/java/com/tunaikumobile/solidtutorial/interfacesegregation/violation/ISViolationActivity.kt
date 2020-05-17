@@ -1,11 +1,12 @@
 package com.tunaikumobile.solidtutorial.interfacesegregation.violation
 
+import android.annotation.SuppressLint
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.tunaikumobile.solidtutorial.R
 import kotlinx.android.synthetic.main.activity_interface_segregation.*
 
-class ISViolationActivity : AppCompatActivity(), ISViolationOnClickListener {
+class ISViolationActivity : AppCompatActivity(), OnClickListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -16,6 +17,7 @@ class ISViolationActivity : AppCompatActivity(), ISViolationOnClickListener {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onClick() {
         tvName.text = "Franz Andel"
     }

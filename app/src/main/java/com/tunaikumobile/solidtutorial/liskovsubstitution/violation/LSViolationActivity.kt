@@ -11,9 +11,9 @@ class LSViolationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_liskov_substitution)
 
-        val jobsViolation: JobsViolation = ProgrammerViolation()
-        jobsViolation.doWork()
+        val jobs: Jobs = Programmer()
+        jobs.doWork()
         // talkToCustomer() is called, but do nothing 
-        jobsViolation.talkToCustomer()
+        jobs.talkToCustomer()
     }
 }

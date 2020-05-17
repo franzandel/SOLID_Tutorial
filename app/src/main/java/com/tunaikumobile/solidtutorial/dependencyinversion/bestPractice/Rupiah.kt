@@ -6,6 +6,5 @@ package com.tunaikumobile.solidtutorial.dependencyinversion.bestPractice
  */
 
 class Rupiah: MoneyConversion {
-
     override fun currency() = "Rp."
 }

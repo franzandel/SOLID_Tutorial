@@ -6,6 +6,5 @@ package com.tunaikumobile.solidtutorial.dependencyinversion.bestPractice
  */
 
 class Dollar: MoneyConversion {
-
     override fun currency() = "$"
 }

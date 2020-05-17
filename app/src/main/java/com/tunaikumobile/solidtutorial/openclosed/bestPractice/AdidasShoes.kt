@@ -6,6 +6,5 @@ package com.tunaikumobile.solidtutorial.openclosed.bestPractice
  */
 
 class AdidasShoes : ShoesBrand() {
-
     override fun getShoesPrice() = 1500
 }

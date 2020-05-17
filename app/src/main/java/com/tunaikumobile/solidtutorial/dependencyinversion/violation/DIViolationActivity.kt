@@ -10,22 +10,22 @@ class DIViolationActivity : AppCompatActivity() {
 
     // How if you want to change dollarViolation into RupiahViolation
     // while dollarViolation is used in many places?
-    private lateinit var dollarViolation: DollarViolation
+    private lateinit var dollar: Dollar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_dependency_inversion)
 
-        setConversionViolation(DollarViolation())
+        setConversion(Dollar())
         setUI()
     }
 
-    private fun setConversionViolation(dollarViolation: DollarViolation) {
-        this.dollarViolation = dollarViolation
+    private fun setConversion(dollar: Dollar) {
+        this.dollar = dollar
     }
 
     @SuppressLint("SetTextI18n")
     private fun setUI() {
-        tvMyMoney.text = "${dollarViolation.currency()}5.000"
+        tvMyMoney.text = "${dollar.currency()}5.000"
     }
 }

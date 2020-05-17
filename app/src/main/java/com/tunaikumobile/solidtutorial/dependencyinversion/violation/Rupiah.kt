@@ -5,7 +5,6 @@ package com.tunaikumobile.solidtutorial.dependencyinversion.violation
  * Android Engineer
  */
 
-class DollarViolation {
-
-    fun currency() = "$"
+class Rupiah {
+    fun moneyCurrency() = "Rp."
 }

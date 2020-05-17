@@ -5,7 +5,7 @@ package com.tunaikumobile.solidtutorial.interfacesegregation.violation
  * Android Engineer
  */
 
-interface ISViolationOnClickListener {
+interface OnClickListener {
     fun onClick()
     fun onLongClick()
 }
