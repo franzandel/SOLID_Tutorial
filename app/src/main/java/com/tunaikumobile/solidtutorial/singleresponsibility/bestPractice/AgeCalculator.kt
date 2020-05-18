@@ -7,8 +7,8 @@ import java.util.*
  * Android Engineer
  */
 
-class AgeHelper {
-    fun countAge(birthYear: Int): String {
+class AgeCalculator {
+    fun calculateAge(birthYear: Int): String {
         val currentYear = Calendar.getInstance().get(Calendar.YEAR)
 
         return (currentYear - birthYear).toString()

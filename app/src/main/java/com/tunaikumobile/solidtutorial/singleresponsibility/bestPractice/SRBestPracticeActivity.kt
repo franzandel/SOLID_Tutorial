@@ -19,6 +19,6 @@ class SRBestPracticeActivity : AppCompatActivity() {
     private fun setupUIWithSRP() {
         tvName.text = "Franz"
         // No Logic, only Showing Result
-        tvAge.text = AgeHelper().countAge(1999)
+        tvAge.text = AgeCalculator().calculateAge(1999)
     }
 }
