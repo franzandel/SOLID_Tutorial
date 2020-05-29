@@ -5,7 +5,6 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.tunaikumobile.solidtutorial.R
 import kotlinx.android.synthetic.main.activity_main.*
-import java.util.*
 
 class SRViolationActivity : AppCompatActivity() {
 
@@ -18,8 +17,12 @@ class SRViolationActivity : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
     private fun setupUINotSRP() {
-        tvName.text = "Franz"
-        // Contains Logic
-        tvAge.text = (Calendar.getInstance().get(Calendar.YEAR) - 1999).toString()
+        val ageCalculator = AgeCalculator()
+        val birthYear = 2000
+
+        if (ageCalculator.isValid(birthYear)) {
+            tvName.text = "Franz"
+            tvAge.text = ageCalculator.calculate(birthYear)
+        }
     }
 }

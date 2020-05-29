@@ -3,13 +3,13 @@ package com.tunaikumobile.solidtutorial.singleresponsibility.bestPractice
 import java.util.*
 
 /**
- * Created by Franz Andel on 2019-10-18.
+ * Created by Franz Andel on 28/05/20.
  * Android Engineer
  */
 
-class AgeCalculator {
-    fun calculate(birthYear: Int): String {
+class AgeValidator {
+    fun isValid(birthYear: Int): Boolean {
         val currentYear = Calendar.getInstance().get(Calendar.YEAR)
-        return (currentYear - birthYear).toString()
+        return currentYear > birthYear
     }
 }

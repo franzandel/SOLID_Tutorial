@@ -17,8 +17,11 @@ class SRBestPracticeActivity : AppCompatActivity() {
 
     @SuppressLint("SetTextI18n")
     private fun setupUIWithSRP() {
-        tvName.text = "Franz"
-        // No Logic, only Showing Result
-        tvAge.text = AgeCalculator().calculateAge(1999)
+        val birthYear = 2000
+
+        if (AgeValidator().isValid(birthYear)) {
+            tvName.text = "Franz"
+            tvAge.text = AgeCalculator().calculate(birthYear)
+        }
     }
 }
