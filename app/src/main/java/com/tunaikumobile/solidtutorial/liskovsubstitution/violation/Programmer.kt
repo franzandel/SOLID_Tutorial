@@ -5,13 +5,9 @@ package com.tunaikumobile.solidtutorial.liskovsubstitution.violation
  * Android Engineer
  */
 
-class Programmer : Jobs() {
+class Programmer : Jobs {
 
     override fun doWork() {
         println("Working on Software Development Project")
-    }
-
-    override fun talkToCustomer() {
-
     }
 }

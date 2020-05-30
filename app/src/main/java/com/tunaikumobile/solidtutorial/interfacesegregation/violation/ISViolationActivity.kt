@@ -23,6 +23,6 @@ class ISViolationActivity : AppCompatActivity(), OnClickListener {
     }
 
     override fun onLongClick() {
-        // This method is not used, but is forced to be implemented
+        // This function is not used, but is forced to be implemented
     }
 }

@@ -5,4 +5,7 @@ package com.tunaikumobile.solidtutorial.liskovsubstitution.bestPractice
  * Android Engineer
  */
 
-abstract class Jobs : Work, Talk
+interface Jobs {
+    fun doWork()
+    fun talkToCustomer()
+}

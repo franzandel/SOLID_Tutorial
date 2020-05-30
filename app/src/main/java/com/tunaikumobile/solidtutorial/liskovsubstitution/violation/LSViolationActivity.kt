@@ -11,9 +11,15 @@ class LSViolationActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_liskov_substitution)
 
-        val jobs: Jobs = Programmer()
+//        This is okay because doWork() is fully supported by Jobs
+//        val jobs: Jobs = Programmer()
+//        jobs.doWork()
+
+//        This violates the principle, because talkToCustomer() is not supported by Jobs
+        val jobs: Jobs = Salesman()
         jobs.doWork()
-        // talkToCustomer() is called, but do nothing 
-        jobs.talkToCustomer()
+        if (jobs is Salesman) {
+            jobs.talkToCustomer()
+        }
     }
 }

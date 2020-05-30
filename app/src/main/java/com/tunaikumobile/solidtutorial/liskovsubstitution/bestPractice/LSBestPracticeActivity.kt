@@ -10,8 +10,8 @@ class LSBestPracticeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_liskov_substitution)
 
-        val work: Work = Programmer()
-        // Now, we won't find talkToCustomer() Method anymore
-        work.doWork()
+        val jobs: Jobs = Salesman()
+        jobs.doWork()
+        jobs.talkToCustomer()
     }
 }

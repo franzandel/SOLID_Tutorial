@@ -5,7 +5,6 @@ package com.tunaikumobile.solidtutorial.liskovsubstitution.violation
  * Android Engineer
  */
 
-abstract class Jobs {
-    abstract fun doWork()
-    abstract fun talkToCustomer()
+interface Jobs {
+    fun doWork()
 }

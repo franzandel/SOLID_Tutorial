@@ -5,7 +5,7 @@ package com.tunaikumobile.solidtutorial.liskovsubstitution.bestPractice
  * Android Engineer
  */
 
-class Salesman : Jobs() {
+class Salesman : Jobs {
 
     override fun doWork() {
         println("Working on Selling Goods")
