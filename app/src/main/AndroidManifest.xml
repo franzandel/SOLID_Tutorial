@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.tunaikumobile.solidtutorial">
+    package="com.franzandel.solidtutorial">
 
     <application
         android:allowBackup="true"
@@ -9,23 +9,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".RootActivity">
+        <activity android:name="com.franzandel.solidtutorial.RootActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".openclosed.violation.OCViolationActivity" />
-        <activity android:name=".openclosed.bestPractice.OCBestPracticeActivity" />
-        <activity android:name=".dependencyinversion.bestPractice.DIBestPracticeActivity" />
-        <activity android:name=".dependencyinversion.violation.DIViolationActivity" />
-        <activity android:name=".interfacesegregation.bestPractice.ISBestPracticeActivity" />
-        <activity android:name=".interfacesegregation.violation.ISViolationActivity" />
-        <activity android:name=".liskovsubstitution.bestPractice.LSBestPracticeActivity" />
-        <activity android:name=".liskovsubstitution.violation.LSViolationActivity" />
-        <activity android:name=".singleresponsibility.bestPractice.SRBestPracticeActivity" />
-        <activity android:name=".singleresponsibility.violation.SRViolationActivity" />
+        <activity android:name="com.franzandel.solidtutorial.openclosed.violation.OCViolationActivity" />
+        <activity android:name="com.franzandel.solidtutorial.openclosed.bestPractice.OCBestPracticeActivity" />
+        <activity android:name="com.franzandel.solidtutorial.dependencyinversion.bestPractice.DIBestPracticeActivity" />
+        <activity android:name="com.franzandel.solidtutorial.dependencyinversion.violation.DIViolationActivity" />
+        <activity android:name="com.franzandel.solidtutorial.interfacesegregation.bestPractice.ISBestPracticeActivity" />
+        <activity android:name="com.franzandel.solidtutorial.interfacesegregation.violation.ISViolationActivity" />
+        <activity android:name="com.franzandel.solidtutorial.liskovsubstitution.bestPractice.LSBestPracticeActivity" />
+        <activity android:name="com.franzandel.solidtutorial.liskovsubstitution.violation.LSViolationActivity" />
+        <activity android:name="com.franzandel.solidtutorial.singleresponsibility.bestPractice.SRBestPracticeActivity" />
+        <activity android:name="com.franzandel.solidtutorial.singleresponsibility.violation.SRViolationActivity" />
     </application>
 
 </manifest>
